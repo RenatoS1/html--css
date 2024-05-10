@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /* SELETORES PERSONALIZADOS :
+        #   = id
+        .   = class
+        :   = Pseudo-class
+        ::  = Pseudo-element
+        >   = clildren
+        */
+        body{
+            font-family:monospace;
+            font-size: 20px;
+            background-color: #07f9a2;
+        }
+
+        h1{
+            color: #0d192b;
+            text-align: center;
+            text-decoration:underline;
+        }
+
+        a{
+            color: darkblue;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        a:visited{
+            background-color: rgb(243, 83, 235);
+        }
+
+        a:hover{
+            color: rgb(245, 229, 10);
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        .Especial::before{
+            content: '↱';
+        }
+
+        .Especial::after{
+            content:'↰' ;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        a#diferente{
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+   <h1>Personalizando Links</h1> 
+   <ul>
+    <li><a href="https://www.youtube.com/" target="_blank">  Youtube.</a></li>
+    <li><a href="https://www.instagram.com/" target="_blank"> Instagram.</a></li>
+    <li><a href="file:///home/rafael/Documentos/vs.code/Landing%20PAGE/index.html" target="_blank" class="Especial"> Leaning Page.</a></li>
+   </ul>
+
+  
+
+</body>
+</html>
