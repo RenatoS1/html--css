@@ -11,10 +11,17 @@
            
         }
         table {
-            
+            position: relative;
             width: 80vw;
             margin:auto ;
             border-collapse: collapse; 
+            
+        }
+
+        thead > tr >th {
+            position: sticky;
+            top: -1px;
+            background-color: dimgrey;
         }
 
         td, th {
@@ -34,11 +41,12 @@
         caption {
             font-weight: bold;
             font-size: 1.7em;
-            background-color: rgb(236, 160, 160);
+            background-color: rgb(179, 113, 113);
         }
         
         td {
             padding:12px ;
+            font-weight: bold;
         }
 
         h1 {
@@ -192,5 +200,6 @@
         </tfoot>
       
     </table>
+    
 </body>
 </html>
