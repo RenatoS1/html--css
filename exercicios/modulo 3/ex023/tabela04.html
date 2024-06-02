@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family:sans-serif;
+
+        }
+
+        th, td {
+           text-align: center;
+            border: 1px solid rgba(0, 0, 0, 0.342);
+            padding: 10px;
+        }
+        table {
+            border-collapse: collapse;
+            margin: auto;
+            height: 150px;
+            width: 500px;
+            background-color: antiquewhite;
+        }
+        caption {
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercicio de Tabelas</h1>
+
+    <table>
+        <caption>
+            Filmes Favoritos
+        </caption>
+        <thead>
+            <th>Grupos</th>
+            <th>Nomes</th>
+            <th colspan="3">Filmes</th>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="3">Mulheres</th>
+                <td>Ana Maria</td>
+                <td>Alien</td>
+                <td>Rambo</td>
+                <td>Vingadores</td>
+            </tr>
+            <tr>
+                <td>Beatriz Souza</td>
+                <td>Hulk</td>
+                <td>Inception</td>
+                <td>Maze Runer</td>
+            </tr>
+            <tr>
+                <td>Claudia Melo</td>
+                <td>Matriz</td>
+                <td>Velozes e Furiosos 10</td>
+                <td>Através da Minha Janela</td>
+            </tr>
+            <tr>
+                <th rowspan="3">Homens</th>
+                <td>Bruno Mendoça</td>
+                <td>Intocáveis</td>
+                <td>Troia</td>
+                <td>Gente Grande</td>
+            </tr>
+            <tr>
+                <td>Jorginho</td>
+                <td>Esposa de Mentirinha</td>
+                <td>Gato de Botas</td>
+                <td>Shrek</td>
+            </tr>
+            <tr>
+                <td>Renato Sena</td>
+                <td>Invecivel</td>
+                <td>Resgate</td>
+                <td>Atack on Titan</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
