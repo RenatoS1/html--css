@@ -20,10 +20,17 @@
 </head>
 <body>
     <h1>Criando nosso primeiro formulario</h1>
-    <form > <!--Se qisermos desativar as suestões de nomes que aparecem quando clicamos dentro do formulario basta colocar-mos a tag AUTOCOMPLETE = "OFF" logo depois de FORM-->
-       <p> Nome : <input type="text" name="nome" id="nome"></p>
-       <p> Sobrenome : <input type="text" name="sobrenome" id="sobrenome"></p>
-       <p><input type="submit" value="Enviar"></p> 
+    <form method="get" action="load.js" autocomplete="off"> <!--Se qisermos desativar as suestões de nomes que aparecem quando clicamos dentro do formulario basta colocar-mos a tag AUTOCOMPLETE = "OFF" logo depois de FORM-->
+       <p>
+        <label for="inome" > Nome :</label> <input type="text" name="nome" id="inome">
+       </p>
+       <p> 
+        <label for="isobrenome">Sobrenome : </label>
+        <input type="text" name="sobrenome" id="isobrenome">
+    </p>
+       <p>
+        <input type="submit" value="Enviar">
+       </p> 
         
     </form>
 </body>
