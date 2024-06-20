@@ -3,35 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario</title>
-    <style>
-        form {
-            text-align: center;
-            
-
-        }
-        form > input {
-            
-            border-radius: 20px;
-            padding: 10px;
-        }
-
-    </style>
+    <title>Formularios</title>
 </head>
 <body>
-    <h1>Criando nosso primeiro formulario</h1>
-    <form method="post" action="load.js" autocomplete="on"> <!--Se qisermos desativar as suestões de nomes que aparecem quando clicamos dentro do formulario basta colocar-mos a tag AUTOCOMPLETE = "OFF" logo depois de FORM-->
-       <p>
-        <label for="iuser" > Usuario : </label> <input type="text" name="usuario" id="iuser" minlength="5" maxlength="10" required size="15" >
-       </p>
-       <p> 
-        <label for="isenha"> Senha : </label>
-        <input type="password" name="senha" id="isenha"  minlength="5" maxlength="10" required size="15">
-    </p>
-       <p>
+    <h1>
+        Meu primeiro formulario 
+    </h1>
+
+    <form action="load.js" autocomplete="off"> 
+        <p>
+            <label for="iuser"> Usuario : </label> <input type="text" name="usu" id="iuser" placeholder=" Min 6 Caracteres" required>
+        </p>
+        <p>
+            <label for="isenha"> Senha : </label> <input type="password" name="sen" id="isenha" placeholder="Min 6 Caracteres" required>
+        </p>
         <input type="submit" value="Enviar">
-       </p> 
-        
     </form>
 </body>
 </html>
