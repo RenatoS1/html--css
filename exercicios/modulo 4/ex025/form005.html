@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <style>
+        fieldset {
+            margin-top: 20px;
+        }
+        legend {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplos de Formularios</h1>
+    <form action="load.js" method="get">
+        <fieldset>
+            <legend>Qual seu sexo ? </legend>
+            <p>
+                <input type="radio" name="sexo" id="imas" checked value="M"> <label for="imas"> Masculino </label> <br>
+                <input type="radio" name="sexo" id="ifem" value="F"> <label for="ifem"> Feminino </label>
+            </p>
+        </fieldset>
+
+
+        <fieldset id="espaço">
+            <legend>Esporte favorito</legend>
+             <div><label for="espote"> Selecione o esporte que você mais pratica : </label></div>
+            <p>
+               
+                <input type="checkbox" name="fut" id="ifut" > <label for="ifut">Futebol  </label> <br>
+                <input type="checkbox" name="basq" id="ibas" > <label for="ibas">Basquete </label> <br>
+                <input type="checkbox" name="tenis" id="itenis" > <label for="itenis">Tenis </label> <br>
+                <input type="checkbox" name="futsal" id="ifutsal" > <label for="ifutsal">Futsal  </label>
+            
+            </p>   
+        </fieldset>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </form>
+</body>
+</html>
