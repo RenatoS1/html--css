@@ -1,0 +1,10 @@
+@charset "UTF-8";
+/*E3STILO PARA TELAS*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-family: sans-serif;
+}
