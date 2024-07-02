@@ -6,6 +6,70 @@
 
 -----------------------------
 
-Pequenas telas : (320px - 480px)
-
+-Telas Extrapequenas [Telefones] : (0px - 600px)
+-Telas Pequenas [Tablets,Telefones]:(600px - 768px)
+-Telas Medias [Tablets,Laptops]:(768px - 992px)
+-Telas Grandes [Laptops,Desktops]:(992px - 1200px)
+-Telas Extragrandes [Desktops Grandes , TVs]:(1200px e mais)
 */
+
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+@media print {
+    body {
+        background-image: url(../imagens/back-print.jpg)/*Desnecessario*/        
+    }
+    main {
+        border: 2px solid black;
+        width:50vw;
+    }
+    main > h1 {
+        text-shadow: none;
+        color: black;
+    }
+    img#tel {display: none;}
+    img#tab {display: none ;}
+    img#impre {display: block;}
+    img#pc {display: none;}
+    img#telasgrandes {display: none;}
+
+    
+}
+
+
+@media screen and (min-width:768px) and (max-width:992px) { /*Tablets*/
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+    img#tel {display: none;}
+    img#tab {display: block;}
+    img#impre {display: none;}
+    img#pc {display: none;}
+    img#telasgrandes {display: none;}
+
+  
+}
+
+@media screen and (min-width:992px) and (max-width:1200px) {/*Desktops*/
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+    img#tel {display: none;}
+    img#tab {display: none;}
+    img#impre {display: none;}
+    img#pc {display: block;}
+    img#telasgrandes {display: none;}
+}
+
+@media screen and (min-width:1200px) {/*Grandes Telas*/
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+    img#tel {display: none;}
+    img#tab {display: none;}
+    img#impre {display: none;}
+    img#pc {display: none;}
+    img#telasgrandes {display: block;}
+}
