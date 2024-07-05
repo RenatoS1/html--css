@@ -7,7 +7,7 @@
 }
 
 html, body{
-    background-color: #9fe7bc;
+    background-color: azure;
 }
 
 header {
@@ -49,7 +49,7 @@ menu > ul > li > a {
     border-top: 2px solid gray;
 }
 menu > ul > li > a:hover {
-    background-color: gray;
+    background-color:#9fe7bc;
 }
 
 main {

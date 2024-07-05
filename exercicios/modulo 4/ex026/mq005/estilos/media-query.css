@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+/*Typical Device Breakpoints
+-----------------------------
+-Telas Extrapequenas [Telefones] : (0px - 600px)
+-Telas Pequenas [Tablets,Telefones]:(600px - 768px)
+-Telas Medias [Tablets,Laptops]:(768px - 992px)
+-Telas Grandes [Laptops,Desktops]:(992px - 1200px)
+-Telas Extragrandes [Desktops Grandes , TVs]:(1200px e mais)
+*/
+
+@media screen and (min-width:768px) {
+    #burger {
+        display: none;
+    }
+
+    menu {
+        display: block;
+    }
+    menu > ul li {
+        display: inline-block;padding: 10px;
+        width: 90px;
+    }
+
+    main {
+        width: 768px;
+    }
+    
+}
