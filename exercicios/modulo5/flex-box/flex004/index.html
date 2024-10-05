@@ -3,54 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alinhamento nos eixos FLEX-BOX</title>
+    <title>Flexible Box</title>
     <style>
-        body{
-            background-color: black;
-            color: aliceblue;
-            text-align: center;
-        }
-        .pai{
-            background-color: azure;
-            width: 200px;
-            height: 50px;
-            margin: auto;
-            padding: 10px;
-            border-radius: 10px;
+        .conteiner{
+            background-color: lightblue;
+            flex-flow: row nowrap;
             display: flex;
-            flex-flow: row-reverse nowrap;
-            justify-content: ;
+            height: 300px;
+            justify-content: space-around;
 
+            align-items: ;
         }
-        .item1{
+
+        .item{
+            background-color: lightgreen;
+            border: 1px solid black;
+
             
-            width: 50px;
-            height: 50px;
-            background-color: aqua;
-            border-radius: 10px;
-        }
-        .item2{
-            
-            width: 50px;
-            height: 50px;
-            background-color: aqua;
-            border-radius: 10px;
-        }
-        .item3{
-            
-            width: 50px;
-            height: 50px;
-            background-color: aqua;
-            border-radius: 10px;
+            text-align: center;
+
         }
     </style>
 </head>
 <body>
-    <h1>Alinhamento nos eixos FlexBox</h1>
-    <div class="pai">
-        <div class="item1"></div>
-        <div class="item2"></div>
-        <div class="item3"></div>
+    <div class="conteiner">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
     </div>
 </body>
 </html>
